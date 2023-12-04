@@ -1,56 +1,281 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Fluxoscript est un nouveau langage de programmation innovant et performant. Cette page contient la documentation du langage. C'est un langage propulsée par IA qui va permettre...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style_doc.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="google-site-verification" content="lakbKrcX1s6NltUUtuxMOrCKqHtu73Ddyavtco-x_Eg" />
+    <title>Fluxoscript - Documentation</title>
+
+</head>
+
 <body>
-    <header>
-        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">FluxoScript</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-                  <a class="nav-link active" href="./docs.html">Docs</a>
-                  <a class="nav-link" href="./install.html">Install</a>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./docs.html">docs</a>
+            </li>
 
-                </div>
-              </div>
-            </div>
-          </nav>
-    </header>
+          </ul>
 
-    
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-        <div>
-            <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+<main>
+  <div class="container">
 
-                <h1>FluxoScript</h1>
+    <h1 class="title">Fluxoscript</h1>
+    <h2 class="subtitle">Documentation</h2>
+    <div class="section">
+        <h3 class="section-title">Introduction</h3>
+        <p class="section-content">Fluxoscript est un nouveau langage de programmation innovant et performant. Il
+            est conçu pour être facile à apprendre, à écrire et à exécuter. Il combine les avantages de plusieurs
+            paradigmes de programmation, tels que la programmation fonctionnelle, la programmation orientée objet,
+            la programmation réactive et la programmation concurrente. Il est adapté pour le développement web, le
+            traitement de données, l'intelligence artificielle et bien plus encore.</p>
+    </div>
+    <div class="section">
+        <h3 class="section-title">Syntaxe</h3>
+        <p class="section-content">La syntaxe de Fluxoscript est simple et élégante. Elle suit les principes
+            suivants:</p>
+        <ul class="section-content">
+            <li>Les mots-clés sont en minuscules et commencent par un caractère alphabétique.</li>
+            <li>Les noms de variables, de fonctions et de classes commencent par un caractère alphabétique ou un
+                souligné (_), et peuvent contenir des caractères alphanumériques ou des soulignés.</li>
+            <li>Les constantes sont en majuscules et commencent par un caractère alphabétique.</li>
+            <li>Les commentaires commencent par un dièse (#) et se terminent par un saut de ligne.</li>
+            <li>Les blocs de code sont délimités par des accolades ({ et }).</li>
+            <li>Les instructions se terminent par un point-virgule (;).</li>
+            <li>Les expressions sont évaluées de gauche à droite, sauf si des parenthèses sont utilisées pour
+                modifier l'ordre de priorité.</li>
+            <li>Les opérateurs arithmétiques sont +, -, *, /, % (modulo), ** (puissance).</li>
+            <li>Les opérateurs de comparaison sont == (égal), != (différent), < (inférieur),> (supérieur), <=
+                        (inférieur ou égal),>= (supérieur ou égal).</li>
+            <li>Les opérateurs logiques sont && (et), || (ou), ! (non).</li>
+            <li>Les opérateurs d'affectation sont =, +=, -=, *=, /=, %=, **=.</li>
+            <li>Les types de données primitifs sont bool (booléen), int (entier), float (réel), str (chaîne de
+                caractères), list (liste), dict (dictionnaire), func (fonction), class (classe).</li>
+            <li>Les valeurs littérales sont true (vrai), false (faux), null (nul), "texte" (chaîne de caractères),
+                [éléments] (liste), {clés: valeurs} (dictionnaire).</li>
+            <li>Les fonctions sont définies avec le mot-clé func, suivi du nom de la fonction, des paramètres entre
+                parenthèses, et du bloc de code entre accolades.</li>
+            <li>Les classes sont définies avec le mot-clé class, suivi du nom de la classe, de la classe parente
+                entre parenthèses (optionnel), et du bloc de code entre accolades.</li>
+            <li>Les méthodes sont des fonctions définies à l'intérieur d'une classe. Elles prennent le paramètre
+                self comme premier argument, qui représente l'instance de la classe.</li>
+            <li>Les attributs sont des variables définies à l'intérieur d'une classe ou d'une instance de classe.
+            </li>
+            <li>Les constructeurs sont des méthodes spéciales qui sont appelées lors de la création d'une instance
+                de classe. Ils ont le nom __init__ et prennent le paramètre self comme premier argument, suivi des
+                arguments nécessaires à l'initialisation de l'instance.</li>
+            <li>Les destructeurs sont des méthodes spéciales qui sont appelées lors de la destruction d'une instance
+                de classe. Ils ont le nom __del__ et prennent le paramètre self comme seul argument.</li>
+            <li>L'héritage est le mécanisme par lequel une classe peut hériter des attributs et des méthodes d'une
+                autre classe. La classe qui hérite est appelée la classe enfant, et la classe dont elle hérite est
+                appelée la classe parente.</li>
+            <li>Le polymorphisme est le mécanisme par lequel une classe enfant peut redéfinir ou étendre les
+                attributs ou les méthodes d'une classe parente.</li>
+            <li>L'encapsulation est le mécanisme par lequel une classe peut cacher ou protéger ses attributs ou ses
+                méthodes. Les attributs ou les méthodes privés sont précédés d'un double souligné (__), et ne sont
+                accessibles qu'à l'intérieur de la classe. Les attributs ou les méthodes protégés sont précédés d'un
+                simple souligné (_), et sont accessibles à l'intérieur de la classe et de ses classes enfants.</li>
+            <li>L'abstraction est le mécanisme par lequel une classe peut définir des attributs ou des méthodes
+                abstraits, qui doivent être implémentés par les classes enfants. Les attributs ou les méthodes
+                abstraits sont précédés d'un arrobase (@).</li>
+            <li>Les flux sont des objets qui représentent des sources ou des destinations de données, tels que des
+                fichiers, des sockets, des bases de données, etc. Ils sont créés avec le mot-clé flux, suivi du nom
+                du flux, du type de flux entre parenthèses, et du bloc de code entre accolades.</li>
+            <li>Les réactions sont des fonctions qui sont exécutées automatiquement lorsque les données d'un flux
+                changent. Elles sont définies avec le mot-clé réaction, suivi du nom de la réaction, du nom du flux
+                entre parenthèses, et du bloc de code entre accolades.</li>
+            <li>Les taches sont des fonctions qui sont exécutées en parallèle avec le programme principal. Elles
+                sont définies avec le mot-clé tache, suivi du nom de la tache, des paramètres entre parenthèses, et
+                du bloc de code entre accolades.</li>
+            <li>Les structures de contrôle sont des mots-clés qui permettent de contrôler le fluxdu programme selon
+                des conditions ou des répétitions. Elles sont if (si), else (sinon), elif (sinon si), for (pour),
+                while (tant que), break (interrompre), continue (continuer), return (retourner), yield (produire).
+            </li>
+            <li>Les tâches sont des procédures et ne renvoie pas de valeur.
+            </li>
+        </ul>
+    </div>
+    <div class="section">
+        <h3 class="section-title">Exemples</h3>
+        <p class="section-content">Voici quelques exemples de code Fluxoscript pour illustrer la syntaxe et les
+            fonctionnalités du langage.</p>
+        <div class="section-content">
+            <p>Exemple 1: Afficher "Bonjour le monde" à l'écran.</p>
+            <pre class="code">
+# Ceci est un commentaire
+print("Bonjour le monde"); # print est une fonction intégrée qui affiche une valeur à l'écran
+            </pre>
+        </div>
+        <div class="section-content">
+            <p>Exemple 2: Définir une fonction qui calcule la factorielle d'un nombre.</p>
+            <pre class="code">
+func factorielle(n) { # func définit une fonction, n est le paramètre
+if (n == 0) { # if est une structure de contrôle conditionnelle
+    return 1; # return renvoie une valeur et termine la fonction
+} else {
+    return n * factorielle(n - 1); # on utilise la récursivité pour appeler la fonction elle-même
+}
+}
+
+print(factorielle(5)); # on appelle la fonction avec l'argument 5 et on affiche le résultat
+            </pre>
+        </div>
+        <div class="section-content">
+            <p>Exemple 3: Définir une classe qui représente un point dans un espace à deux dimensions.</p>
+            <pre class="code">
+class Point { # class définit une classe, Point est le nom de la classe
+__init__(self, x, y) { # __init__ est le constructeur de la classe, self est l'instance de la classe, x et y sont les arguments
+    self.x = x; # self.x est un attribut de l'instance, on lui affecte la valeur de x
+    self.y = y; # self.y est un attribut de l'instance, on lui affecte la valeur de y
+}
+
+func distance(self, autre) { # func définit une méthode de la classe, self est l'instance de la classe, autre est un autre point
+    return ((self.x - autre.x) ** 2 + (self.y - autre.y) ** 2) ** 0.5; # on calcule la distance entre les deux points
+}
+}
+
+p1 = Point(1, 2); # on crée une instance de la classe Point avec les arguments 1 et 2
+p2 = Point(3, 4); # on crée une autre instance de la classe Point avec les arguments 3 et 4
+print(p1.distance(p2)); # on appelle la méthode distance de l'instance p1 avec l'argument p2 et on affiche le résultat
+            </pre>
+        </div>
+        <div class="section-content">
+            <p>Exemple 4: Définir un flux qui lit les données d'un fichier texte.</p>
+            <pre class="code">
+flux fichier("fichier.txt") { # flux définit un flux, fichier est le nom du flux, "fichier.txt" est le type de flux
+# le bloc de code contient les instructions à exécuter lors de la création du flux
+ouvrir(); # ouvrir est une méthode intégrée qui ouvre le fichier
+}
+
+réaction afficher(fichier) { # réaction définit une réaction, afficher est le nom de la réaction, fichier est le nom du flux
+# le bloc de code contient les instructions à exécuter lorsque les données du flux changent
+ligne = lire(); # lire est une méthode intégrée qui lit une ligne du fichier
+print(ligne); # on affiche la ligne à l'écran
+}
+            </pre>
+        </div>
+        <div class="section-content">
+            <p>Exemple 5: Définir une tache qui calcule la somme des carrés des nombres de 1 à 100.</p>
+            <pre class="code">
+tache somme_carres() { # tache définit une tache, somme_carres est le nom de la tache
+# le bloc de code contient les instructions à exécuter en parallèle avec le programme principal
+somme = 0; # on initialise la variable somme à 0
+for (i = 1; i <= 100; i++) { # for est une structure de contrôle de répétition, i est la variable de boucle
+    somme += i ** 2; # on ajoute le carré de i à la somme
+}
+print(somme); # on affiche la somme à l'écran
+}
+            </pre>
+        </div>
+        <div class="section-content">
+            <p>Exemple 6: Récupérer une saisie utilisateur</p>
+            <pre class="code">
+saisie = input(); # input est une fonction intégrée qui récupère une saisie utilisateur
+
+# on affiche la saisie à l'écran
+
+print(saisie);
+
+saisie = input("Entrez un nombre: "); # on peut aussi afficher un message avant de récupérer la saisie
+
+# on affiche la saisie à l'écran
+
+print(saisie);
+            </pre>
+        </div>
+        <div class="section-content">
+            <p>Exemple 7: Boucles for en Fluxoscript</p>
+            <pre class="code">
+for (i = 0 | i <= 10 | i++) { # on initialise i à 0, on répète la boucle tant que i est inférieur ou égal à 10, on incrémente i à chaque itération
+print(i); # on affiche i à l'écran 
+}
+
+            </pre>
         </div>
 
-        <section>
-            <div></div>
-            
-        </section>
+        <div class="section-content">
+            <p>Exemple 8: Boucles while en Fluxoscript</p>
+            <pre class="code">
+i = 0; # on initialise i à 0
+while (i <= 10 | i++) { # on répète la boucle tant que i est inférieur ou égal à 10, on incrémente i à chaque itération
+print(i); # on affiche i à l'écran
+}
 
-    </main>
+            </pre>
+        </div>
+        <div class="section-content">
+            <p>Exemple 9: Les tableaux en Fluxoscript</p>
+            <pre class="code">
+tableau = int<>[10]; # on crée un tableau de taille 10
+tableau2 = int<2>[10] # on crée un tableau de taille 10 à deux dimensions
+tableau3 = int<3>[10] # on crée un tableau de taille 10 à trois dimensions
 
-    <footer>
+tableau[0] = 1; # on affecte la valeur 1 à la première case du tableau
 
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
-    
+tableau2[0][0] = 2; # on affecte la valeur 2 à la première case du tableau à deux dimensions
 
-  </body>
+tableau3[0][0][0] = 3; # on affecte la valeur 3 à la première case du tableau à trois dimensions
+
+'''
+Tableau 1 :
+[1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Tableau 2 :
+[[2, 0, 0, 0, 0, 0, 0, 0, 0, 0]...]
+
+Tableau 3 :
+[[[3, 0, 0, 0, 0, 0, 0, 0, 0, 0]...]...]
+
+'''
+
+valeur = tableau[0]; # on récupère la valeur de la première case du tableau
+
+valeur2 = tableau2[0][0]; # on récupère la valeur de la première case du tableau à deux dimensions
+
+valeur3 = tableau3[0][0][0]; # on récupère la valeur de la première case du tableau à trois dimensions
+
+print(valeur); # on affiche la valeur à l'écran (1)
+
+print(valeur2); # on affiche la valeur à l'écran (2)
+
+print(valeur3); # on affiche la valeur à l'écran (3)
+
+
+            </pre>
+        </div>
+        
+    </div>
+    <p class="footer">© 2023 Fluxoscript. Tous droits réservés.</p>
+</div>
+
+
+</main>
+
+<footer></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+
 </html>
