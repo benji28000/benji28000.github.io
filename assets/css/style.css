@@ -1,6 +1,14 @@
-body {
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
+    position: relative;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 h1 {
     color: #007bff;
@@ -20,16 +28,16 @@ img {
     border-radius: 10px;
 }
 
-footer{
- 
+footer {
+    position: relative;
     bottom: 0;
     width: 100%;
+    height: auto;
     background-color: #343a40;
-    padding:  0;
     color: white;
-    height: 120px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 footer p, footer ul, footer li {
@@ -56,11 +64,10 @@ body{
 }
 
 main {
-    
-    width: 100%;
-    height: 100%;
-
+    flex: 1;
 }
+
+
 
 
 .btn-primary {
@@ -110,22 +117,59 @@ main {
     padding-top: 100px;
   }
 
-#content_section{
-    width: 100%;
-    height:auto;
-    
-    margin-bottom: 20px;
-    background-color:  #f5eeee;
+#content_section {
+    min-height: calc(100vh - 120px);
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
 
 .container{
     padding: 30px;
 }
+#reviews_section {
+    min-height: calc(60vh - 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
 
+#reviews_section .row {
+    width: 100%;
+}
 
+#reviews_section .col-md-4 {
+    display: flex;
+    justify-content: center;
+}
+
+#reviews_section .card {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#reviews_section .card h5 {
+    color: #ffffff;
+}
+
+#reviews_section .card h6 {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+#reviews_section .card p {
+    font-size: 16px;
+}
 
 
 
