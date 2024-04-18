@@ -55,7 +55,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Ajouté par Bing */
 body{
     width: 100%;
     padding: 0;
@@ -82,12 +81,12 @@ main {
 
 #background {
     position: relative;
-    height: 500px;
+    height: 50vh; /* Ajusté pour une meilleure vue sur mobile */
     width: 100%;
     overflow: hidden;
-  }
-  
-  .background-image {
+}
+
+.background-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -97,25 +96,31 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(80%); 
-  }
-  
-  .text-overlay {
+    filter: brightness(80%);
+}
+
+.text-overlay {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-  }
-  
-  .text-overlay h1 {
-    color: #fff;
-    font-size: 50px;
-    font-family: playfair display;
-    text-align: center;
-    padding-top: 100px;
-  }
+    width: 90%;
+}
+
+.text-overlay h1 {
+    font-size: calc(2em + 2vw);
+    padding-top: 5vh;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .text-overlay h1 {
+        font-size: calc(1.5em + 2vw);
+    }
+}
+
 
 #content_section {
     min-height: calc(100vh - 120px);
